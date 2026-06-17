@@ -1,0 +1,80 @@
+@import "tailwindcss"
+
+:root {
+  /* Areej Brand Colors */
+  --color-navy-950: #071525;
+  --color-navy-900: #0B1F35;
+  --color-navy-800: #102B46;
+  --color-blue-700: #0E3A66;
+  --color-gold-600: #B8893B;
+  --color-gold-500: #C99A49;
+  --color-gold-400: #D8B46A;
+  --color-cream: #F8F4EC;
+  --color-sand: #EFE6D8;
+  --color-white: #FFFFFF;
+  --color-slate-950: #0F172A;
+  --color-slate-900: #111827;
+  --color-slate-700: #374151;
+  --color-slate-500: #6B7280;
+  --color-slate-200: #E5E7EB;
+  --color-slate-100: #F3F4F6;
+  /* Depalma Brand Colors */
+  --color-depalma-red: #E21B1B;
+  --color-depalma-blue: #1E88E5;
+}
+
+@theme inline {
+  --color-areej-navy-950: var(--color-navy-950);
+  --color-areej-navy-900: var(--color-navy-900);
+  --color-areej-navy-800: var(--color-navy-800);
+  --color-areej-blue-700: var(--color-blue-700);
+  --color-areej-gold-600: var(--color-gold-600);
+  --color-areej-gold-500: var(--color-gold-500);
+  --color-areej-gold-400: var(--color-gold-400);
+  --color-areej-cream: var(--color-cream);
+  --color-areej-sand: var(--color-sand);
+  --color-depalma-red: var(--color-depalma-red);
+  --color-depalma-blue: var(--color-depalma-blue);
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+/* RTL support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+/* Line clamp utility */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-slate-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-slate-500);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-slate-700);
+}

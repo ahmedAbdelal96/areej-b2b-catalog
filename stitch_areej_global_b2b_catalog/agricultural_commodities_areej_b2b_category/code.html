@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Agricultural Commodities - Areej Al Alam</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#dce2f7",
+                      "on-surface-variant": "#44474c",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed-dim": "#c9c6bf",
+                      "on-surface": "#141b2b",
+                      "primary-container": "#0f1c2d",
+                      "on-tertiary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "surface-container-high": "#e1e8fd",
+                      "surface": "#f9f9ff",
+                      "cream": "#F8F4EC",
+                      "on-secondary-fixed": "#281800",
+                      "danger": "#DC2626",
+                      "on-tertiary-fixed-variant": "#484741",
+                      "on-secondary": "#ffffff",
+                      "surface-bright": "#f9f9ff",
+                      "on-error": "#ffffff",
+                      "tertiary-fixed": "#e6e2da",
+                      "surface-container": "#e9edff",
+                      "secondary-fixed-dim": "#f3be6a",
+                      "secondary-container": "#ffc974",
+                      "on-primary-container": "#778599",
+                      "success": "#0F766E",
+                      "inverse-surface": "#293040",
+                      "surface-container-low": "#f1f3ff",
+                      "slate-text-muted": "#374151",
+                      "primary": "#000000",
+                      "outline-variant": "#c5c6cd",
+                      "on-tertiary-fixed": "#1c1c17",
+                      "inverse-on-surface": "#edf0ff",
+                      "inverse-primary": "#bac7dd",
+                      "gold-light": "#D8B46A",
+                      "error": "#ba1a1a",
+                      "on-background": "#141b2b",
+                      "secondary-fixed": "#ffddaf",
+                      "primary-fixed-dim": "#bac7dd",
+                      "surface-container-highest": "#dce2f7",
+                      "on-tertiary-container": "#86847d",
+                      "outline": "#75777d",
+                      "secondary": "#7e5708",
+                      "on-secondary-container": "#795203",
+                      "tertiary-container": "#1c1c17",
+                      "surface-tint": "#525f72",
+                      "primary-fixed": "#d6e3fa",
+                      "background": "#f9f9ff",
+                      "on-secondary-fixed-variant": "#614000",
+                      "on-primary-fixed-variant": "#3b485a",
+                      "surface-dim": "#d3daef",
+                      "tertiary": "#000000",
+                      "surface-container-lowest": "#ffffff",
+                      "sand": "#EFE6D8",
+                      "on-primary-fixed": "#0f1c2d",
+                      "error-container": "#ffdad6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "section-padding-mobile": "48px",
+                      "card-gap": "32px",
+                      "gutter": "24px",
+                      "section-padding-desktop": "80px"
+              },
+              "fontFamily": {
+                      "label-bold": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Manrope"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "quote-button": [
+                              "Manrope"
+                      ],
+                      "headline-xl-mobile": [
+                              "Manrope"
+                      ],
+                      "headline-xl": [
+                              "Manrope"
+                      ],
+                      "headline-md": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "label-bold": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "quote-button": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(248, 244, 236, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .ambient-shadow {
+            box-shadow: 0 20px 40px -10px rgba(7, 21, 37, 0.05);
+        }
+        .product-card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 25px 50px -12px rgba(7, 21, 37, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar (Web) -->
+<nav class="hidden md:flex bg-surface border-b border-outline-variant shadow-sm w-full top-0 sticky z-50 transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand -->
+<div class="flex items-center">
+<a class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight" href="#">Areej Al Alam</a>
+</div>
+<!-- Navigation Links -->
+<div class="flex items-center gap-8">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200" href="#">Products</a>
+<a class="text-primary font-bold border-b-2 border-secondary pb-1 hover:text-secondary transition-colors duration-200" href="#">Categories</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200" href="#">About Us</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200" href="#">Global Presence</a>
+</div>
+<!-- Search & Actions -->
+<div class="flex items-center gap-6">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline" data-icon="search">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container rounded-[20px] border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all w-64 font-body-sm text-body-sm" placeholder="Search catalog..." type="text"/>
+</div>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-sm text-body-sm" href="#">العربية</a>
+<button class="bg-primary text-on-primary font-quote-button text-quote-button px-6 py-2.5 rounded-lg hover:shadow-lg hover:-translate-y-0.5 transition-all relative overflow-hidden group">
+<span class="relative z-10">Request Quote</span>
+<div class="absolute bottom-0 left-0 w-full h-[2px] bg-gold-light transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+</button>
+</div>
+</div>
+</nav>
+<!-- TopNavBar (Mobile) -->
+<nav class="md:hidden flex justify-between items-center w-full px-4 h-16 bg-surface border-b border-outline-variant top-0 sticky z-50">
+<a class="font-headline-xl-mobile text-headline-xl-mobile font-bold text-primary tracking-tight" href="#">Areej Al Alam</a>
+<div class="flex gap-4">
+<button class="text-on-surface"><span class="material-symbols-outlined" data-icon="search">search</span></button>
+<button class="text-on-surface"><span class="material-symbols-outlined" data-icon="menu">menu</span></button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full flex flex-col">
+<!-- Hero Section -->
+<section class="relative w-full h-[614px] min-h-[400px] flex items-center justify-center overflow-hidden bg-primary-container">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0 opacity-40">
+<img alt="Agricultural Commodities Field" class="w-full h-full object-cover" data-alt="A vast, golden wheat field at golden hour, capturing the essence of premium agricultural commodities. The warm, low-angle sunlight highlights the texture of the ripe grains against a clear, deep sky. The aesthetic is mature, expansive, and high-quality, embodying stable, global food supply chains in a corporate modern style with deep navy and gold undertones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaKsFF3Nsvo5_hFLHdLPddMT8Uvyck_gf6f2V9aq78kNjzL4x1Sb5Zu-t0Zrhwv0naHpfe8BLtn3BaKfka6i53by9_Br7n646WUy2Ksj-PYczdswNuCQu9C2RBRx5LLJGZhjVXn6yW_NPw8MnYFj9AVB_iVda5tZSZVg1TtvNl2Xn_bBfLv-0HoIRyb0C-k64KrGsAvSLcSTz40KYI5N0kQj4Ed70LcGNM2hTXdlx2K2tnsKx9tRnQUj8mlZvJRzbp4DD2tS1pMi8"/>
+</div>
+<div class="relative z-10 w-full max-w-container-max px-gutter mx-auto text-center md:text-left flex flex-col items-center md:items-start gap-6">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface/10 backdrop-blur-md border border-outline/30 text-on-primary font-label-bold text-label-bold mb-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="agriculture">agriculture</span>
+                    Category
+                </div>
+<h1 class="font-headline-xl text-headline-xl md:text-[64px] md:leading-[72px] font-bold text-on-primary max-w-3xl">
+                    Agricultural Commodities
+                </h1>
+<p class="font-body-lg text-body-lg text-inverse-primary max-w-2xl">
+                    Premium quality grains, seeds, and legumes sourced globally to meet demanding industrial and commercial requirements. Reliable supply chains, verified quality.
+                </p>
+<div class="flex flex-wrap gap-4 mt-4">
+<button class="bg-gold-light text-on-secondary-fixed font-quote-button text-quote-button px-8 py-3 rounded-lg hover:bg-secondary-fixed transition-colors shadow-lg">
+                        View Full Catalog
+                    </button>
+<button class="bg-transparent border border-on-primary text-on-primary font-quote-button text-quote-button px-8 py-3 rounded-lg hover:bg-on-primary/10 transition-colors">
+                        Sourcing Support
+                    </button>
+</div>
+</div>
+</section>
+<!-- Subcategory Navigation -->
+<section class="w-full bg-cream border-b border-outline-variant py-4 sticky top-[80px] z-40 shadow-sm hidden md:block">
+<div class="max-w-container-max mx-auto px-gutter flex gap-8 overflow-x-auto no-scrollbar">
+<a class="font-label-bold text-label-bold text-primary border-b-2 border-primary pb-1 whitespace-nowrap" href="#grains">Grains &amp; Cereals</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="#seeds">Seeds &amp; Pulses</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="#legumes">Legumes</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="#oils">Edible Oils</a>
+<a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="#feed">Animal Feed Ingredients</a>
+</div>
+</section>
+<!-- Main Layout: Sidebar + Grid -->
+<div class="w-full max-w-container-max mx-auto px-gutter py-section-padding-desktop flex flex-col md:flex-row gap-8">
+<!-- Filters Sidebar -->
+<aside class="w-full md:w-64 flex-shrink-0 flex flex-col gap-8">
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary mb-4 border-b border-outline-variant pb-2">Filters</h3>
+<div class="mb-6">
+<h4 class="font-label-bold text-label-bold text-on-surface mb-3">Origin</h4>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-primary">North America</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-primary">South America</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-primary">Europe</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-primary">Asia Pacific</span>
+</label>
+</div>
+</div>
+<div class="mb-6">
+<h4 class="font-label-bold text-label-bold text-on-surface mb-3">Grade</h4>
+<div class="flex flex-wrap gap-2">
+<button class="px-3 py-1 bg-primary text-on-primary font-body-sm text-body-sm rounded-full border border-primary">Premium</button>
+<button class="px-3 py-1 bg-surface text-on-surface-variant font-body-sm text-body-sm rounded-full border border-outline-variant hover:border-primary transition-colors">Standard</button>
+<button class="px-3 py-1 bg-surface text-on-surface-variant font-body-sm text-body-sm rounded-full border border-outline-variant hover:border-primary transition-colors">Industrial</button>
+</div>
+</div>
+<div class="mb-6">
+<h4 class="font-label-bold text-label-bold text-on-surface mb-3">Packaging</h4>
+<select class="w-full bg-surface border border-outline-variant rounded-[20px] px-4 py-2 font-body-sm text-body-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none">
+<option>Any Packaging</option>
+<option>Bulk</option>
+<option>50kg Bags</option>
+<option>Jumbo Bags (1MT)</option>
+</select>
+</div>
+</div>
+</aside>
+<!-- Product Grid Area -->
+<div class="flex-grow flex flex-col gap-12">
+<!-- Popular in Category (Bento Style Highlights) -->
+<section>
+<div class="flex items-center justify-between mb-6">
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary">Popular Commodities</h2>
+<a class="font-label-bold text-label-bold text-secondary hover:underline flex items-center gap-1" href="#">
+                            View All <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Highlight Card 1 -->
+<div class="bg-white rounded-xl border border-outline-variant overflow-hidden product-card-hover ambient-shadow flex flex-col cursor-pointer group">
+<div class="relative h-48 bg-cream overflow-hidden">
+<img alt="Premium Hard Red Wheat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A close-up, high-resolution shot of premium hard red wheat grains piled neatly against a soft cream background. The lighting is bright and clean, highlighting the texture and golden-amber color of the grains. The style is modern, product-centric, and professional, fitting a high-end B2B trade catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTSgVJ8NRuNILaytlzLMRgRQr_pHGztIYYOg-toh0_oN1gsVHnuKZTCbq3xNlrls50Xt1bfeeJkdDdkC5JvT0kcTE2KckDRKkBHfbq3gK4Kn3QNLIG4xegGQ5SxfD4hpOkU0lzMa6-1NJ2h25hOD3c9VKZAfZ3R9QQ0Zt7XMNF-Y_k6eXA01-v0HeHPvrOO6xdA2EZVRul8yZ1wltACdQ4zcek5vij-OPbuIcn4_ZJB32D6413ZnjNsB-TCdFVmm0RAm53mjflL-Q"/>
+<div class="absolute top-3 left-3 bg-gold-light text-on-secondary-fixed font-label-bold text-[12px] px-2 py-1 rounded-full shadow-sm">
+                                    High Demand
+                                </div>
+</div>
+<div class="p-5 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md font-semibold text-primary mb-1">Premium Hard Red Winter Wheat</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 line-clamp-2">High-protein wheat ideal for bread and premium baking flours. Sourced from North America.</p>
+<div class="mt-auto flex justify-between items-center border-t border-outline-variant/30 pt-4">
+<span class="font-body-sm text-body-sm text-slate-text-muted">MOQ: 100 MT</span>
+<button class="text-primary hover:text-secondary font-label-bold text-label-bold transition-colors">Details</button>
+</div>
+</div>
+</div>
+<!-- Highlight Card 2 -->
+<div class="bg-white rounded-xl border border-outline-variant overflow-hidden product-card-hover ambient-shadow flex flex-col cursor-pointer group">
+<div class="relative h-48 bg-cream overflow-hidden">
+<img alt="Yellow Corn/Maize" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A macro photography shot of bright yellow corn kernels filling the frame. The lighting is crisp and even, emphasizing the glossy texture and vibrant color of the maize. The image feels industrial yet clean, representing a bulk agricultural commodity in a premium, trustworthy B2B context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuN1VcP1EVAQkYnmtixOVXbpiqHszOxR_tX0RRuD1eOf4Pqqw5GnG5TuUoycZd92p8XoJ0Z9JavGWs6lG2x7u8n1fkfv8lZkYRO_1XUqk5gFrzl_YyQVVZHqp5qUD4EVG_OtF7j1fWXMaSaa8Wb0th2m9AO4jBDLCB5dGrLNm2HUc7ip2haZ3UPX6qAhBQ8IyNRKW7jox27DsDj4aBZjZK31aIerrpMKLfP6dccbJA1Kg0Y1swYvVdJOVqvyNJrcrFh-yejFIuGxE"/>
+</div>
+<div class="p-5 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md font-semibold text-primary mb-1">Yellow Corn (Maize) Grade 2</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 line-clamp-2">Standard grade yellow corn suitable for animal feed and industrial processing.</p>
+<div class="mt-auto flex justify-between items-center border-t border-outline-variant/30 pt-4">
+<span class="font-body-sm text-body-sm text-slate-text-muted">MOQ: 500 MT</span>
+<button class="text-primary hover:text-secondary font-label-bold text-label-bold transition-colors">Details</button>
+</div>
+</div>
+</div>
+<!-- Highlight Card 3 -->
+<div class="bg-white rounded-xl border border-outline-variant overflow-hidden product-card-hover ambient-shadow flex flex-col cursor-pointer group hidden lg:flex">
+<div class="relative h-48 bg-cream overflow-hidden">
+<img alt="Soybeans" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A pristine pile of pale yellow soybeans sitting on an elegant light gray surface. The lighting is soft and studio-quality, casting subtle shadows that give depth to the legumes. The overall mood is clean, structural, and premium, aligning with a modern corporate catalog aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0_xwqYsGQ7HewwdZwEMxk2RAw-scjIor9omUl1vXs1K-E8uK9bVoDHpf_AQv2asa-3F48tspeOSGI6SW51GwaHdaFctaaEnzMgDPA_mfzeytA91HX82vZtC37nZ1XY8TUTy6jN5uBpC8hqXbbVUeQpTOBAIYNm9X9NYOdphtXqfte7on5EmNbrTATx2mApPwtUYBRhIslANStgnJefXO9T2jkVqpU0V2LJvEAnNjXlRB0oFgck52Bof94StExrS6qu-KLCQ9Ctr4"/>
+</div>
+<div class="p-5 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md font-semibold text-primary mb-1">Non-GMO Soybeans</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 line-clamp-2">High-oil content soybeans, certified Non-GMO. Ideal for food-grade processing and oil extraction.</p>
+<div class="mt-auto flex justify-between items-center border-t border-outline-variant/30 pt-4">
+<span class="font-body-sm text-body-sm text-slate-text-muted">MOQ: 250 MT</span>
+<button class="text-primary hover:text-secondary font-label-bold text-label-bold transition-colors">Details</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Full Product Grid -->
+<section id="grains">
+<div class="flex items-center justify-between mb-6 border-b border-outline-variant pb-2">
+<h2 class="font-headline-md text-headline-md font-bold text-primary">All Grains &amp; Cereals</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Showing 24 results</span>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+<!-- Standard Item 1 -->
+<div class="bg-white rounded-lg border border-outline-variant p-4 flex flex-col hover:shadow-lg transition-shadow group cursor-pointer">
+<div class="w-full aspect-square bg-cream rounded-md mb-4 overflow-hidden">
+<img alt="White Rice" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A minimalist overhead shot of long-grain white rice in a simple white ceramic bowl. The lighting is soft and diffuse, creating a clean, high-key aesthetic suitable for a premium product catalog. The image feels pure, reliable, and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_MBZbuHkaFwTWdqkA82xcGBnEd_c55WpsDluN8f45oa_O1QLffd209BWDqlyZd36eq4QNhbl5UDJ_7ZmX7-LhuYIWKze7-BAebXAEygv28XRzr6lWpsGd-sYJQFahTIuouT8B69z8d5QC6Lq1VZmhE_AqG5nLb9ivMccftuUzFOmruqJNYS-11BCOTuwjeSviVCNdqOCkSAwpaXHCSrZvJgnc-zJCrNvQAZXHmzSZJzGVRwbsbHYB6LfmPXDhbGJnlIxYZ2zUYZo"/>
+</div>
+<h4 class="font-label-bold text-label-bold text-primary mb-1">Long Grain White Rice</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mb-3 flex-grow">5% Broken, Thai Origin</p>
+<button class="w-full py-2 bg-surface border border-outline-variant rounded-md font-label-bold text-body-sm text-primary hover:bg-primary hover:text-on-primary transition-colors">
+                                Add to Quote
+                            </button>
+</div>
+<!-- Standard Item 2 -->
+<div class="bg-white rounded-lg border border-outline-variant p-4 flex flex-col hover:shadow-lg transition-shadow group cursor-pointer">
+<div class="w-full aspect-square bg-cream rounded-md mb-4 overflow-hidden">
+<img alt="Barley" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A textured close-up of raw barley grains filling the frame. The lighting casts subtle shadows, emphasizing the rustic yet high-quality nature of the agricultural commodity. The tones are warm browns and golds, fitting a professional B2B trade platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR7Ix7wIdqPA-Sp9zONGmiMk9tvYTNKv1twzAKiTKOgDJ-aGGKpM2PX0pxV4BhNj1LFRlJ7X9azfCamwWp8vOKFVQKdZtqVb3lSrnfZVVUGPi5pncFmkn5GE2PquK5ZiHsMXZNU0F8pM4vFb3dZzjeJGMm3PvZ6ZwiTEkbDZoziZFuVEj-izEkCb7Uiol-bsyAIGJRcGmugzVyPys5XMWYpgYZLf1yQbfQ1ymvSMWLnuRPG7mh7KpQWufqbo1GbCa11uONiUKppW0"/>
+</div>
+<h4 class="font-label-bold text-label-bold text-primary mb-1">Feed Barley</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mb-3 flex-grow">Standard Quality, Bulk</p>
+<button class="w-full py-2 bg-surface border border-outline-variant rounded-md font-label-bold text-body-sm text-primary hover:bg-primary hover:text-on-primary transition-colors">
+                                Add to Quote
+                            </button>
+</div>
+<!-- Standard Item 3 -->
+<div class="bg-white rounded-lg border border-outline-variant p-4 flex flex-col hover:shadow-lg transition-shadow group cursor-pointer">
+<div class="w-full aspect-square bg-cream rounded-md mb-4 overflow-hidden">
+<img alt="Oats" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Rolled oats neatly presented against a clean, light background. The image is sharp and well-lit, focusing on the texture and purity of the commodity. The aesthetic is clean, structural, and ready for a commercial catalog layout." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhNGNnPBbLScNG6MZeO2WeFodOnivDHy_udaFEFJj61jEyJrjxzlTqDGCKyeidKxfYGyRd3K1opDhbDTHZXzvtOZT3Nd7rmyWOA_X-hrvEpuwrnb38YVEvMoHmI1SCFW_qa2rSxH3np-1Zf-fuwtuYLFh1oE8weXn1MPJymrE5Hydy9Ql31eM8YtF46fmDVRq3BdMIENrO4FBBXh4FKSICyH6wVrp_Wz6fHTCWOIOt3vQU-wTsrDwIEioudMtaduQGiVbso3NHI04"/>
+</div>
+<h4 class="font-label-bold text-label-bold text-primary mb-1">Milling Oats</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mb-3 flex-grow">Food Grade, 50kg Bags</p>
+<button class="w-full py-2 bg-surface border border-outline-variant rounded-md font-label-bold text-body-sm text-primary hover:bg-primary hover:text-on-primary transition-colors">
+                                Add to Quote
+                            </button>
+</div>
+<!-- Standard Item 4 -->
+<div class="bg-white rounded-lg border border-outline-variant p-4 flex flex-col hover:shadow-lg transition-shadow group cursor-pointer">
+<div class="w-full aspect-square bg-cream rounded-md mb-4 flex items-center justify-center">
+<span class="material-symbols-outlined text-[48px] text-outline-variant" data-icon="image">image</span>
+</div>
+<h4 class="font-label-bold text-label-bold text-primary mb-1">Sorghum</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mb-3 flex-grow">Red Sorghum, Feed Grade</p>
+<button class="w-full py-2 bg-surface border border-outline-variant rounded-md font-label-bold text-body-sm text-primary hover:bg-primary hover:text-on-primary transition-colors">
+                                Add to Quote
+                            </button>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex justify-center mt-12 gap-2">
+<button class="w-10 h-10 rounded-md border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]" data-icon="chevron_left">chevron_left</span></button>
+<button class="w-10 h-10 rounded-md bg-primary text-on-primary font-label-bold flex items-center justify-center">1</button>
+<button class="w-10 h-10 rounded-md border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-colors font-label-bold">2</button>
+<button class="w-10 h-10 rounded-md border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-colors font-label-bold">3</button>
+<span class="w-10 h-10 flex items-center justify-center text-on-surface-variant">...</span>
+<button class="w-10 h-10 rounded-md border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]" data-icon="chevron_right">chevron_right</span></button>
+</div>
+</section>
+</div>
+</div>
+<!-- Sourcing Support CTA (Glassmorphism) -->
+<section class="w-full max-w-container-max mx-auto px-gutter mb-section-padding-desktop">
+<div class="glass-panel rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
+<!-- Decorative Element -->
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-2xl relative z-10 text-center md:text-left">
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary mb-3">Can't Find a Specific Commodity?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Our global network spans over 40 countries. Submit a custom sourcing request and our trade specialists will secure the right product at competitive terms.
+                    </p>
+</div>
+<div class="relative z-10 flex-shrink-0 w-full md:w-auto">
+<button class="w-full md:w-auto bg-primary text-on-primary font-quote-button text-quote-button px-8 py-4 rounded-xl hover:bg-primary-container transition-colors shadow-lg flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+                        Contact Sourcing Team
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container border-t border-outline/20 w-full py-section-padding-desktop px-gutter flex flex-col md:flex-row justify-between max-w-container-max mx-auto mt-auto">
+<div class="mb-8 md:mb-0">
+<a class="font-headline-lg text-headline-lg font-bold text-on-primary tracking-tight block mb-4" href="#">Areej Al Alam</a>
+<p class="font-body-sm text-body-sm text-on-primary-container max-w-sm mb-4">Global B2B Trade specialists connecting GCC markets with premium international commodities.</p>
+<p class="font-body-sm text-body-sm text-on-primary-container">© 2024 Areej Al Alam. All Rights Reserved. Riyadh, Saudi Arabia.</p>
+</div>
+<div class="grid grid-cols-2 gap-8 md:gap-16">
+<div class="flex flex-col gap-3">
+<span class="font-label-bold text-label-bold text-on-primary mb-2 opacity-50">Offices</span>
+<a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" href="#">Saudi Arabia Office</a>
+<a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" href="#">Egypt Branch</a>
+<a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" href="#">Malaysia Logistics</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-label-bold text-label-bold text-on-primary mb-2 opacity-50">Resources</span>
+<a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" href="#">Catalog PDF</a>
+<a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" href="#">Terms of Trade</a>
+<a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+<!-- Fixed Mobile CTA (Request Quote) -->
+<div class="md:hidden fixed bottom-0 left-0 w-full p-4 bg-surface/90 backdrop-blur-md border-t border-outline-variant z-50">
+<button class="w-full bg-primary text-on-primary font-quote-button text-quote-button py-3 rounded-lg shadow-lg">
+            Request Quote
+        </button>
+</div>
+</body></html>

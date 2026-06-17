@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Areej Al Alam - Product Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#dce2f7",
+                        "on-surface-variant": "#44474c",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#c9c6bf",
+                        "on-surface": "#141b2b",
+                        "primary-container": "#0f1c2d",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e1e8fd",
+                        "surface": "#f9f9ff",
+                        "cream": "#F8F4EC",
+                        "on-secondary-fixed": "#281800",
+                        "danger": "#DC2626",
+                        "on-tertiary-fixed-variant": "#484741",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f9f9ff",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#e6e2da",
+                        "surface-container": "#e9edff",
+                        "secondary-fixed-dim": "#f3be6a",
+                        "secondary-container": "#ffc974",
+                        "on-primary-container": "#778599",
+                        "success": "#0F766E",
+                        "inverse-surface": "#293040",
+                        "surface-container-low": "#f1f3ff",
+                        "slate-text-muted": "#374151",
+                        "primary": "#000000",
+                        "outline-variant": "#c5c6cd",
+                        "on-tertiary-fixed": "#1c1c17",
+                        "inverse-on-surface": "#edf0ff",
+                        "inverse-primary": "#bac7dd",
+                        "gold-light": "#D8B46A",
+                        "error": "#ba1a1a",
+                        "on-background": "#141b2b",
+                        "secondary-fixed": "#ffddaf",
+                        "primary-fixed-dim": "#bac7dd",
+                        "surface-container-highest": "#dce2f7",
+                        "on-tertiary-container": "#86847d",
+                        "outline": "#75777d",
+                        "secondary": "#7e5708",
+                        "on-secondary-container": "#795203",
+                        "tertiary-container": "#1c1c17",
+                        "surface-tint": "#525f72",
+                        "primary-fixed": "#d6e3fa",
+                        "background": "#f9f9ff",
+                        "on-secondary-fixed-variant": "#614000",
+                        "on-primary-fixed-variant": "#3b485a",
+                        "surface-dim": "#d3daef",
+                        "tertiary": "#000000",
+                        "surface-container-lowest": "#ffffff",
+                        "sand": "#EFE6D8",
+                        "on-primary-fixed": "#0f1c2d",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "section-padding-mobile": "48px",
+                        "card-gap": "32px",
+                        "gutter": "24px",
+                        "section-padding-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "label-bold": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Manrope"],
+                        "body-sm": ["Inter"],
+                        "quote-button": ["Manrope"],
+                        "headline-xl-mobile": ["Manrope"],
+                        "headline-xl": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-bold": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "quote-button": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 40px -10px rgba(7, 21, 37, 0.05);
+        }
+        .soft-shadow-hover:hover {
+            box-shadow: 0 20px 40px -10px rgba(7, 21, 37, 0.1);
+            transform: translateY(-2px);
+        }
+        /* Custom scrollbar for data tables */
+        .data-scroll::-webkit-scrollbar {
+            height: 6px;
+        }
+        .data-scroll::-webkit-scrollbar-track {
+            background: #F8F4EC; 
+        }
+        .data-scroll::-webkit-scrollbar-thumb {
+            background: #c5c6cd; 
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar (Web) -->
+<nav class="hidden md:flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20 docked full-width top-0 sticky bg-surface border-b border-outline-variant shadow-sm z-50">
+<div class="flex items-center gap-8">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">Areej Al Alam</div>
+<div class="flex gap-6">
+<a class="text-primary font-bold border-b-2 border-secondary pb-1 font-label-bold text-label-bold" href="#">Products</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-label-bold text-label-bold" href="#">Categories</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-label-bold text-label-bold" href="#">About Us</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-label-bold text-label-bold" href="#">Global Presence</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-label-bold text-label-bold flex items-center gap-1">
+<span class="material-symbols-outlined" style="font-size: 18px;">search</span>
+</button>
+<button class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-label-bold text-label-bold">العربية</button>
+<button class="bg-primary-container text-on-primary px-6 py-2 rounded-full font-quote-button text-quote-button hover:bg-primary transition-colors border-b-2 border-transparent hover:border-gold-light">Request Quote</button>
+</div>
+</nav>
+<!-- Main Content Layout -->
+<main class="max-w-container-max mx-auto px-gutter py-8 md:py-12 flex flex-col lg:flex-row gap-card-gap relative">
+<!-- Left Column: Product Data Canvas -->
+<div class="flex-1 flex flex-col gap-10">
+<!-- Breadcrumb & Header -->
+<div class="flex flex-col gap-4">
+<nav class="flex text-on-primary-container font-body-sm text-body-sm gap-2 items-center">
+<a class="hover:text-primary transition-colors" href="#">Catalog</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Industrial Chemicals</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-on-surface font-medium">Premium Urea 46% Prilled</span>
+</nav>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+<div>
+<h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-2">Premium Urea 46% Prilled</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">High-grade nitrogenous fertilizer suitable for a wide range of agricultural and industrial applications. Sourced directly from top-tier GCC manufacturing facilities.</p>
+</div>
+<div class="flex gap-2">
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 rounded-full font-label-bold text-label-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">verified</span> Verified Origin
+                        </span>
+<span class="bg-cream text-on-surface px-3 py-1 rounded-full font-label-bold text-label-bold border border-outline-variant">CAS: 57-13-6</span>
+</div>
+</div>
+</div>
+<!-- Hero Image Gallery (Bento Style) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 h-[400px]">
+<div class="md:col-span-2 rounded-xl overflow-hidden relative group bg-cream border border-outline-variant/30 flex items-center justify-center">
+<img alt="Product Main" class="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105" data-alt="A professional, high-resolution product shot of pure white prilled urea fertilizer piled in a neat mound on a clean, light grey surface. The lighting is bright and even, highlighting the spherical shape and crystalline texture of the granules. The background is a soft, out-of-focus warehouse setting, evoking an industrial yet highly clean and premium B2B environment. Subtle cool-toned lighting adds a modern, authoritative feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDT7e24twHzjrtSTqpJUN6oPsIqZAY9kh3o2rG6dHSkt2nLlscFoxXvnI7oA7xAlcrSUFmZ5Z28M6nvtbB3LA5X0dLMbIxtTPRrroQik4Lkp9VoL3QyTixWEDw26FZZzEiUqrCXivEDsA4pVJVjNnDp2hVNEfS72y9ftfgIvG_t_tA7sb4KoDQjHW3ImQ1BmSzpcjiepyaFKHJKncDNmoOBUn_s_bbZE3wIYpZAPKOj4zijpnk1mTTRYxapEncJcieUm_kpoOS4Xs"/>
+</div>
+<div class="hidden md:flex flex-col gap-4">
+<div class="flex-1 rounded-xl overflow-hidden relative bg-cream border border-outline-variant/30">
+<img alt="Detail 1" class="w-full h-full object-cover opacity-90" data-alt="A close-up macro photograph showing the precise, uniform spherical shape of white prilled urea granules. The focus is incredibly sharp on the center granules, with a shallow depth of field blurring the edges. The lighting is stark and clinical, emphasizing the purity and high quality of the chemical product. The overall color palette is predominantly white and soft grey, maintaining a clean, premium aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgkJs_P6H1fkq7A4ugXgVTuc_ofoiQgp1DCpRbyFc6IXUwqShK1oB7IynmxqZRjJXmRAik2YYpgwqdmnL57M5JhO8ePwzNyt_MhgKQ4QfOgiCA68S4-Xrgb0G2iP2Fv6qu6GD7fo8jW4uKQie5Ni5jDuRzlQw_NuXnStx88DaGH7fw6p9F9zR4PciWsNfWyBb291iB8BSB-s07OTIVzcOZfk8m97XhB1ILJ2F8D2aSNzqrDJ27WW7bMPgAbqDFYFrSKrj6ShmYpag"/>
+</div>
+<div class="flex-1 rounded-xl overflow-hidden relative bg-surface-variant border border-outline-variant/30 flex items-center justify-center p-6 text-center">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-4xl text-primary-container">local_shipping</span>
+<span class="font-label-bold text-label-bold text-primary">Bulk Shipping Available</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Vessels or Containers</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Detailed Specs (Glass/Card Layout) -->
+<section class="bg-surface-container-lowest rounded-xl p-8 soft-shadow border border-outline-variant/50">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-gold-light text-2xl">science</span>
+<h2 class="font-headline-md text-headline-md text-primary">Technical Specifications</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+<div class="flex justify-between border-b border-outline-variant/40 pb-2">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Nitrogen Content (Dry Basis)</span>
+<span class="text-on-surface font-label-bold text-label-bold">46.0% Min</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/40 pb-2">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Biuret</span>
+<span class="text-on-surface font-label-bold text-label-bold">1.0% Max</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/40 pb-2">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Moisture</span>
+<span class="text-on-surface font-label-bold text-label-bold">0.5% Max</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/40 pb-2">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Granulometry (1-2.84mm)</span>
+<span class="text-on-surface font-label-bold text-label-bold">90% Min</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/40 pb-2">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Color</span>
+<span class="text-on-surface font-label-bold text-label-bold">Standard White</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/40 pb-2">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Free Ammonia</span>
+<span class="text-on-surface font-label-bold text-label-bold">160 ppm Max</span>
+</div>
+</div>
+<div class="mt-8 flex items-center justify-between bg-surface p-4 rounded-lg border border-outline-variant/30">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">picture_as_pdf</span>
+<div>
+<div class="font-label-bold text-label-bold text-on-surface">Official Specification Sheet</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">PDF • 1.2 MB • Updated Oct 2023</div>
+</div>
+</div>
+<button class="text-primary font-label-bold text-label-bold hover:text-gold-light flex items-center gap-1 transition-colors">
+                        Download <span class="material-symbols-outlined text-sm">download</span>
+</button>
+</div>
+</section>
+<!-- Origin/Logistics & Certifications -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<section class="bg-surface-container-lowest rounded-xl p-8 soft-shadow border border-outline-variant/50">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-gold-light text-2xl">globe_asia</span>
+<h2 class="font-headline-md text-headline-md text-primary">Origin &amp; Logistics</h2>
+</div>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-on-surface-variant mt-0.5" style="font-size: 20px;">location_on</span>
+<div>
+<span class="block font-label-bold text-label-bold text-on-surface">Primary Origin</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Saudi Arabia / UAE</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-on-surface-variant mt-0.5" style="font-size: 20px;">inventory_2</span>
+<div>
+<span class="block font-label-bold text-label-bold text-on-surface">Packaging Options</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">50kg Bags, 1000kg Jumbo Bags, Bulk in Break Bulk Vessel</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-on-surface-variant mt-0.5" style="font-size: 20px;">schedule</span>
+<div>
+<span class="block font-label-bold text-label-bold text-on-surface">Lead Time</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">14-21 days to FOB port</span>
+</div>
+</li>
+</ul>
+</section>
+<section class="bg-surface-container-lowest rounded-xl p-8 soft-shadow border border-outline-variant/50">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-gold-light text-2xl">workspace_premium</span>
+<h2 class="font-headline-md text-headline-md text-primary">Certifications</h2>
+</div>
+<div class="flex flex-wrap gap-3">
+<div class="bg-surface px-4 py-3 rounded-lg border border-outline-variant/30 flex items-center gap-2">
+<span class="material-symbols-outlined text-success">check_circle</span>
+<span class="font-label-bold text-label-bold text-on-surface">ISO 9001:2015</span>
+</div>
+<div class="bg-surface px-4 py-3 rounded-lg border border-outline-variant/30 flex items-center gap-2">
+<span class="material-symbols-outlined text-success">check_circle</span>
+<span class="font-label-bold text-label-bold text-on-surface">REACH Compliant</span>
+</div>
+<div class="bg-surface px-4 py-3 rounded-lg border border-outline-variant/30 flex items-center gap-2">
+<span class="material-symbols-outlined text-success">check_circle</span>
+<span class="font-label-bold text-label-bold text-on-surface">SGS Inspection</span>
+</div>
+</div>
+<p class="mt-4 font-body-sm text-body-sm text-on-surface-variant">All shipments undergo mandatory pre-shipment inspection by SGS or equivalent independent surveyors.</p>
+</section>
+</div>
+</div>
+<!-- Right Column: Sticky Quote Panel -->
+<aside class="w-full lg:w-[400px] flex-shrink-0">
+<div class="sticky top-28 bg-primary-container text-on-primary rounded-2xl p-8 soft-shadow flex flex-col gap-6 relative overflow-hidden">
+<!-- Subtle background accent -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-gold-light/10 rounded-full blur-2xl -mr-10 -mt-10"></div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-1">Request a Quote</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container">Enter your requirements for pricing.</p>
+</div>
+<form class="flex flex-col gap-5 relative z-10">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-bold text-label-bold text-on-primary-fixed-variant">Quantity Required</label>
+<div class="flex">
+<input class="flex-1 bg-surface-tint/20 border border-outline/30 rounded-l-lg px-4 py-3 text-on-primary placeholder:text-on-primary-container focus:outline-none focus:border-gold-light focus:ring-1 focus:ring-gold-light transition-colors font-body-md text-body-md" min="1" placeholder="e.g. 500" type="number"/>
+<select class="bg-surface-tint/40 border border-l-0 border-outline/30 rounded-r-lg px-4 py-3 text-on-primary focus:outline-none focus:border-gold-light focus:ring-1 focus:ring-gold-light transition-colors font-body-md text-body-md appearance-none">
+<option class="text-on-surface bg-surface">MT</option>
+<option class="text-on-surface bg-surface">FCL</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-bold text-label-bold text-on-primary-fixed-variant">Destination Port / Country</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-primary-container" style="font-size: 20px;">sailing</span>
+<input class="w-full bg-surface-tint/20 border border-outline/30 rounded-lg pl-10 pr-4 py-3 text-on-primary placeholder:text-on-primary-container focus:outline-none focus:border-gold-light focus:ring-1 focus:ring-gold-light transition-colors font-body-md text-body-md" placeholder="e.g. Jebel Ali, UAE" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-bold text-label-bold text-on-primary-fixed-variant">Target Incoterms</label>
+<select class="w-full bg-surface-tint/20 border border-outline/30 rounded-lg px-4 py-3 text-on-primary focus:outline-none focus:border-gold-light focus:ring-1 focus:ring-gold-light transition-colors font-body-md text-body-md appearance-none">
+<option class="text-on-surface bg-surface">CIF (Cost, Insurance &amp; Freight)</option>
+<option class="text-on-surface bg-surface">FOB (Free On Board)</option>
+<option class="text-on-surface bg-surface">CFR (Cost &amp; Freight)</option>
+</select>
+</div>
+<div class="mt-4">
+<button class="w-full bg-gold-light text-on-secondary-fixed py-4 rounded-lg font-quote-button text-quote-button hover:bg-secondary-container transition-colors shadow-lg flex justify-center items-center gap-2" type="button">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add_shopping_cart</span>
+                            Add to Quote Basket
+                        </button>
+<p class="text-center font-body-sm text-body-sm text-on-primary-container mt-3">No commitment required. Quotes are valid for 7 days.</p>
+</div>
+</form>
+</div>
+</aside>
+</main>
+<!-- Related Commodities Section -->
+<section class="max-w-container-max mx-auto px-gutter py-12 md:py-16 border-t border-outline-variant/30">
+<div class="flex items-center justify-between mb-8">
+<h2 class="font-headline-lg text-headline-lg text-primary">Related Commodities</h2>
+<a class="text-primary font-label-bold text-label-bold hover:text-gold-light flex items-center gap-1 transition-colors" href="#">
+                View Category <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden soft-shadow transition-all soft-shadow-hover group flex flex-col h-full">
+<div class="h-48 bg-cream relative overflow-hidden flex items-center justify-center p-4">
+<img alt="DAP Fertilizer" class="w-full h-full object-cover rounded mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="A studio shot of Diammonium Phosphate (DAP) fertilizer granules. The granules are a distinct dark brownish-grey, shown in a clean, isolated mound against a light cream background. The lighting is crisp, highlighting the rougher texture of these granules compared to urea. The aesthetic is clean, industrial, and high-end B2B catalog style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO_2Qv2onR3YiovcNuA4GRvmpe516gXtWg8dqg5x5whFc6bE9JI3Y41-cqvLuKQwO8zQ8I94FzgXYS_Vt-CB8aPelatXtHw5x_FQVl8sew9GRGmOVr5N30a5h0Ka-42vhstPDKNTIZSbDg2_htr_Zafv5EaHOH58DKeVjMgkdRS-xO0Hap-YYDw58quMW4unYek-HAYXJb915w1CzqTBEmQ0SMTcjGxXk7szHkCbqG5b3BuNXU3C7hIEgCeOxDLTV11i2BX78_8T4"/>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<h3 class="font-label-bold text-label-bold text-primary mb-1 line-clamp-1">DAP (Diammonium Phosphate)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 line-clamp-2">Premium phosphate fertilizer with 18% N and 46% P2O5.</p>
+<div class="mt-auto">
+<button class="w-full bg-surface text-primary border border-outline-variant py-2 rounded-lg font-quote-button text-sm hover:border-primary transition-colors">View Details</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden soft-shadow transition-all soft-shadow-hover group flex flex-col h-full">
+<div class="h-48 bg-cream relative overflow-hidden flex items-center justify-center p-4">
+<img alt="Sulphur" class="w-full h-full object-cover rounded mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="Bright yellow granular elemental sulphur piled neatly on a sterile white surface. The vivid yellow provides a strong contrast against the clean background. The granules are somewhat irregular but clearly industrial grade. The lighting is bright and shadowless, perfect for a clinical product specification page in a B2B agricultural catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn-mAYoclpaHkvs7G2bKJCMk4uV5OC2BzIm_pHRgRgasCxYRN9pAmu4phlFipLvbGFS3VedDBL_oMiLqG6awJAB4Is13VyvVHiRKIFVrjh0CllDsJpmz2AAQhBVfLd3HkFgK-mMhDSTYa_ouB17rL2sKolWAa3iXUbEWE1vSFGT7wg4JU8Tej8KsmccPVk4ysttsORxnrbq3vzzS0FJRE77OUItKveBecWtNl0gCapLRClxO8cxxey955n1wybEcFvUs_3rFdq7u8"/>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<h3 class="font-label-bold text-label-bold text-primary mb-1 line-clamp-1">Granular Sulphur</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 line-clamp-2">High purity elemental sulphur for industrial and agricultural use.</p>
+<div class="mt-auto">
+<button class="w-full bg-surface text-primary border border-outline-variant py-2 rounded-lg font-quote-button text-sm hover:border-primary transition-colors">View Details</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden soft-shadow transition-all soft-shadow-hover group flex flex-col h-full">
+<div class="h-48 bg-cream relative overflow-hidden flex items-center justify-center p-4">
+<div class="absolute top-2 left-2 bg-gold-light text-on-secondary-fixed text-xs font-label-bold px-2 py-1 rounded-full z-10">Trending</div>
+<img alt="Ammonia" class="w-full h-full object-cover rounded mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="An abstract representation of anhydrous ammonia for industrial cataloging. The image features a sleek, metallic industrial storage tank or pipe segment against a clean, light blue and white background. The lighting is very soft and professional, emphasizing the reliability and heavy-industry nature of the product without looking dirty or gritty. High-end corporate visual style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2GQ-BARoMMuGLZ5mhfPKFsAB-QGUvHGPruvXA4EVF3MLog5KozCxpwLWRpCMwIuoJvKFkGk8FmUi43ll7LqBK3Jg1Gg-IWoUEXlU8vd5DP_u8txCyknEYBnZ2sOghfMfjlUbbzPIK2wBT_e8iiUZZ6hU68d02Y9o1Ua9YsHSjXEF8VIfaK5mXaAcEdGK_zT1UT8nl4ri-7Ejj9aZIIz60CSGFeiZcVr3SmUDrQ6z95igYWgfwM9V6sjPd7GoWaIuhnqoE9hwsgDQ"/>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<h3 class="font-label-bold text-label-bold text-primary mb-1 line-clamp-1">Anhydrous Ammonia</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 line-clamp-2">Fundamental nitrogen source for fertilizer manufacturing.</p>
+<div class="mt-auto">
+<button class="w-full bg-surface text-primary border border-outline-variant py-2 rounded-lg font-quote-button text-sm hover:border-primary transition-colors">View Details</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden soft-shadow transition-all soft-shadow-hover group flex flex-col h-full">
+<div class="h-48 bg-cream relative overflow-hidden flex items-center justify-center p-4">
+<img alt="Urea Granular" class="w-full h-full object-cover rounded mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="A close-up of granular urea (larger granules than prilled) in a neat pile. The granules are slightly translucent white, larger and more irregular than prills. The setting is identical to the other catalog shots: a clean, sterile white/grey background with bright, even lighting to showcase the product's physical characteristics clearly for B2B buyers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn6BuMG4n3GljwoiVjBesFdZStQlxpxQ_gsb7qG0YE1PPG63QlRlf5-W0-Xr4T3DdvSYZG_blUBO4sb_ik9hvgrpj_YEkPB_41yo24PlE1nxMO3gVRa6wygOs5C4goYvpeZb4pwWafb2ZaO8ZpmpwiTFnNtwDs4IrOBvb3hQT0IGIOPjANExQs-EkAvf5H9og_klphSELHV_z4y8lDhFRM2SZm_yi5EC833u6dxjvWUQaSD_YE7LbWIdMdObkUBDD7m1ZEfKHMoKw"/>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<h3 class="font-label-bold text-label-bold text-primary mb-1 line-clamp-1">Urea 46% Granular</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 line-clamp-2">Larger particle size urea preferred for mechanical spreading.</p>
+<div class="mt-auto">
+<button class="w-full bg-surface text-primary border border-outline-variant py-2 rounded-lg font-quote-button text-sm hover:border-primary transition-colors">View Details</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-on-tertiary-fixed border-t border-outline/20 w-full py-section-padding-desktop px-gutter flex flex-col md:flex-row justify-between max-w-container-max mx-auto text-on-primary dark:text-tertiary-fixed gap-8">
+<div class="flex flex-col gap-4">
+<div class="font-headline-lg text-headline-lg font-bold text-on-primary dark:text-gold-light">Areej Al Alam</div>
+<div class="font-body-sm text-body-sm text-on-primary-container max-w-sm">© 2024 Areej Al Alam. All Rights Reserved. Riyadh, Saudi Arabia.</div>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4 font-body-sm text-body-sm">
+<a class="text-on-primary-container dark:text-on-tertiary-container hover:text-on-primary hover:underline transition-all" href="#">Saudi Arabia Office</a>
+<a class="text-on-primary-container dark:text-on-tertiary-container hover:text-on-primary hover:underline transition-all" href="#">Egypt Branch</a>
+<a class="text-on-primary-container dark:text-on-tertiary-container hover:text-on-primary hover:underline transition-all" href="#">Malaysia Logistics</a>
+<a class="text-on-primary-container dark:text-on-tertiary-container hover:text-on-primary hover:underline transition-all" href="#">Catalog PDF</a>
+<a class="text-on-primary-container dark:text-on-tertiary-container hover:text-on-primary hover:underline transition-all" href="#">Terms of Trade</a>
+<a class="text-on-primary-container dark:text-on-tertiary-container hover:text-on-primary hover:underline transition-all" href="#">Privacy Policy</a>
+</div>
+</footer>
+</body></html>

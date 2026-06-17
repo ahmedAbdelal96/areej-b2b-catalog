@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Request for Quotation - Areej Al Alam</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#dce2f7",
+                        "on-surface-variant": "#44474c",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#c9c6bf",
+                        "on-surface": "#141b2b",
+                        "primary-container": "#0f1c2d",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e1e8fd",
+                        "surface": "#f9f9ff",
+                        "cream": "#F8F4EC",
+                        "on-secondary-fixed": "#281800",
+                        "danger": "#DC2626",
+                        "on-tertiary-fixed-variant": "#484741",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f9f9ff",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#e6e2da",
+                        "surface-container": "#e9edff",
+                        "secondary-fixed-dim": "#f3be6a",
+                        "secondary-container": "#ffc974",
+                        "on-primary-container": "#778599",
+                        "success": "#0F766E",
+                        "inverse-surface": "#293040",
+                        "surface-container-low": "#f1f3ff",
+                        "slate-text-muted": "#374151",
+                        "primary": "#000000",
+                        "outline-variant": "#c5c6cd",
+                        "on-tertiary-fixed": "#1c1c17",
+                        "inverse-on-surface": "#edf0ff",
+                        "inverse-primary": "#bac7dd",
+                        "gold-light": "#D8B46A",
+                        "error": "#ba1a1a",
+                        "on-background": "#141b2b",
+                        "secondary-fixed": "#ffddaf",
+                        "primary-fixed-dim": "#bac7dd",
+                        "surface-container-highest": "#dce2f7",
+                        "on-tertiary-container": "#86847d",
+                        "outline": "#75777d",
+                        "secondary": "#7e5708",
+                        "on-secondary-container": "#795203",
+                        "tertiary-container": "#1c1c17",
+                        "surface-tint": "#525f72",
+                        "primary-fixed": "#d6e3fa",
+                        "background": "#f9f9ff",
+                        "on-secondary-fixed-variant": "#614000",
+                        "on-primary-fixed-variant": "#3b485a",
+                        "surface-dim": "#d3daef",
+                        "tertiary": "#000000",
+                        "surface-container-lowest": "#ffffff",
+                        "sand": "#EFE6D8",
+                        "on-primary-fixed": "#0f1c2d",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "section-padding-mobile": "48px",
+                        "card-gap": "32px",
+                        "gutter": "24px",
+                        "section-padding-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "label-bold": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Manrope"],
+                        "body-sm": ["Inter"],
+                        "quote-button": ["Manrope"],
+                        "headline-xl-mobile": ["Manrope"],
+                        "headline-xl": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-bold": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "quote-button": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Glassmorphism utility */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Custom scrollbar for product list */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #dce2f7;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col antialiased">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-primary-container border-b border-outline-variant dark:border-outline shadow-sm dark:shadow-none docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand -->
+<a class="font-headline-lg text-headline-lg font-bold text-primary dark:text-on-primary-fixed tracking-tight md:font-headline-md md:text-headline-md" href="#">
+                Areej Al Alam
+            </a>
+<!-- Navigation Links (Hidden on Mobile) -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant dark:text-on-primary-container font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-bold font-label-bold" href="#">Products</a>
+<a class="text-on-surface-variant dark:text-on-primary-container font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-bold font-label-bold" href="#">Categories</a>
+<a class="text-on-surface-variant dark:text-on-primary-container font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-bold font-label-bold" href="#">About Us</a>
+<a class="text-on-surface-variant dark:text-on-primary-container font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-bold font-label-bold" href="#">Global Presence</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center space-x-4">
+<button class="hidden md:block text-on-surface-variant hover:text-primary transition-colors font-label-bold text-label-bold">
+                    العربية
+                </button>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-quote-button text-quote-button hover:bg-primary-container transition-colors shadow-sm flex items-center gap-2 group">
+<span class="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform">request_quote</span>
+                    Request Quote
+                </button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-gutter py-12 md:py-section-padding-desktop flex flex-col lg:flex-row gap-gutter">
+<!-- Left Column: Flow & Form (Larger) -->
+<div class="w-full lg:w-7/12 flex flex-col gap-10">
+<!-- Page Header & Progress -->
+<div class="flex flex-col gap-6">
+<div>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-2 hidden md:block">Request for Quotation</h1>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-primary mb-2 md:hidden">Request for Quotation</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Review your selected products and provide your company details to receive a customized commercial offer.</p>
+</div>
+<!-- Progress Steps -->
+<div class="flex items-center justify-between relative w-full max-w-md mt-4">
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-0.5 bg-surface-variant -z-10"></div>
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-1/2 h-0.5 bg-gold-light -z-10 transition-all duration-500"></div>
+<!-- Step 1: Done -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-label-bold text-label-bold text-primary">Review List</span>
+</div>
+<!-- Step 2: Active -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-gold-light text-primary flex items-center justify-center shadow-sm border-2 border-surface">
+<span class="font-label-bold text-label-bold">2</span>
+</div>
+<span class="font-label-bold text-label-bold text-primary">Company Info</span>
+</div>
+<!-- Step 3: Pending -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center shadow-sm">
+<span class="font-label-bold text-label-bold">3</span>
+</div>
+<span class="font-label-bold text-label-bold text-on-surface-variant">Submit</span>
+</div>
+</div>
+</div>
+<!-- Company Details Form (Glassmorphism Card) -->
+<section class="glass-card rounded-[24px] p-8 md:p-10 shadow-[0_8px_30px_rgb(7,21,37,0.04)] border border-outline-variant/30 relative overflow-hidden">
+<!-- Subtle Decorative Accent -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-gold-light/10 rounded-full blur-3xl -mr-10 -mt-10"></div>
+<h2 class="font-headline-md text-headline-md text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-gold-light">domain</span>
+                    Company Details
+                </h2>
+<form class="flex flex-col gap-6 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Company Name -->
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-slate-text-muted">Company Name <span class="text-danger">*</span></label>
+<input class="w-full h-12 px-4 rounded-[20px] border border-outline-variant bg-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50" placeholder="Enter full registered name" type="text"/>
+</div>
+<!-- Contact Person -->
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-slate-text-muted">Contact Person <span class="text-danger">*</span></label>
+<input class="w-full h-12 px-4 rounded-[20px] border border-outline-variant bg-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50" placeholder="Full Name" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Email -->
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-slate-text-muted">Business Email <span class="text-danger">*</span></label>
+<input class="w-full h-12 px-4 rounded-[20px] border border-outline-variant bg-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50" placeholder="contact@company.com" type="email"/>
+</div>
+<!-- Phone -->
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-slate-text-muted">Phone Number</label>
+<div class="flex gap-2">
+<select class="w-24 h-12 px-2 rounded-[20px] border border-outline-variant bg-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow font-body-md text-body-md text-on-surface appearance-none cursor-pointer">
+<option>+966</option>
+<option>+971</option>
+<option>+1</option>
+<option>+44</option>
+</select>
+<input class="flex-grow h-12 px-4 rounded-[20px] border border-outline-variant bg-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50" placeholder="05x xxx xxxx" type="tel"/>
+</div>
+</div>
+</div>
+<!-- Country Selection -->
+<div class="flex flex-col gap-2">
+<label class="font-label-bold text-label-bold text-slate-text-muted">Destination Country <span class="text-danger">*</span></label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">public</span>
+<select class="w-full h-12 pl-12 pr-10 rounded-[20px] border border-outline-variant bg-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow font-body-md text-body-md text-on-surface appearance-none cursor-pointer">
+<option disabled="" selected="" value="">Select destination for shipping</option>
+<option value="sa">Saudi Arabia</option>
+<option value="ae">United Arab Emirates</option>
+<option value="eg">Egypt</option>
+<option value="my">Malaysia</option>
+<option value="other">Other Global Destination</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Inquiry Message -->
+<div class="flex flex-col gap-2 mt-2">
+<label class="font-label-bold text-label-bold text-slate-text-muted">Additional Requirements / Inquiry Message</label>
+<textarea class="w-full p-4 rounded-[20px] border border-outline-variant bg-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow font-body-md text-body-md text-on-surface resize-y placeholder:text-on-surface-variant/50" placeholder="Specify packaging requirements, target delivery dates, or specific certifications needed..." rows="4"></textarea>
+</div>
+<!-- Submit Area -->
+<div class="mt-4 pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs text-center sm:text-left">
+                            By submitting, you agree to our <a class="underline hover:text-primary transition-colors" href="#">Terms of Trade</a>.
+                        </p>
+<button class="w-full sm:w-auto bg-gold-light text-primary px-8 py-3.5 rounded-full font-quote-button text-quote-button hover:bg-secondary-fixed transition-colors shadow-md flex items-center justify-center gap-2 group whitespace-nowrap" type="button">
+                            Submit Request for Quotation
+                            <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">send</span>
+</button>
+</div>
+</form>
+</section>
+</div>
+<!-- Right Column: Quote Basket (Smaller, Sticky) -->
+<div class="w-full lg:w-5/12">
+<div class="sticky top-28 flex flex-col gap-6">
+<!-- Basket Card -->
+<div class="bg-surface border border-outline-variant/50 rounded-[24px] shadow-[0_10px_40px_rgb(7,21,37,0.05)] overflow-hidden flex flex-col max-h-[calc(100vh-140px)]">
+<!-- Basket Header -->
+<div class="p-6 border-b border-outline-variant/30 bg-cream/50 flex justify-between items-center">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined">inventory_2</span>
+                                Quote Basket
+                            </h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 Items Selected</span>
+</div>
+<button aria-label="Clear Basket" class="text-on-surface-variant hover:text-danger transition-colors p-2 rounded-full hover:bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">delete_sweep</span>
+</button>
+</div>
+<!-- Basket Items List -->
+<div class="p-6 flex flex-col gap-4 overflow-y-auto custom-scrollbar flex-grow bg-white">
+<!-- Item 1 -->
+<div class="flex gap-4 p-4 rounded-xl border border-outline-variant/30 bg-surface hover:-translate-y-0.5 hover:shadow-md transition-all duration-300 group">
+<div class="w-20 h-20 rounded-lg overflow-hidden bg-cream flex-shrink-0 relative">
+<img alt="Golden Wheat Image" class="w-full h-full object-cover" data-alt="A macro shot of premium golden wheat grains piled in a clean, modern setting. The lighting is soft and bright, emphasizing the golden hues and texture of the grains. The aesthetic is clean, corporate, and agricultural, fitting a high-end B2B catalog in light mode. The background is a soft, off-white cream color." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGzRTu0U4RUUKd2ASWVEdLoknnBS5dInBY0BopBoaUCdwUEpIlcE_3NhWRkhxZvsMLMzCXFNCWND25gG6CraEwqWZX6zOMTNNowhGDLMN2n0V2cSNxGydhjosSali9CSluLZJpmkmN_5vCtYE5rBOPmvok9Cj8G_AzMQ2RgxYMyWPuIbqKhQBbXQoYt7KBoSfevpyjturnM_rlevzOglHLaytD5Iv_dVdFoAysCyS-at9-DimhE5_n3lT6tsf05Gxv8WvMw6xi7Bo"/>
+</div>
+<div class="flex flex-col justify-between flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-label-bold text-label-bold text-primary">Premium Golden Wheat</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Origin: Ukraine | Grade A</span>
+</div>
+<button class="text-on-surface-variant hover:text-danger transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex items-center justify-between mt-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Qty (MT):</span>
+<div class="flex items-center border border-outline-variant rounded-lg overflow-hidden bg-white">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<input class="w-16 h-8 text-center border-x border-outline-variant/30 font-body-sm text-body-sm text-primary focus:outline-none appearance-none bg-transparent" min="100" type="number" value="500"/>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex gap-4 p-4 rounded-xl border border-outline-variant/30 bg-surface hover:-translate-y-0.5 hover:shadow-md transition-all duration-300 group">
+<div class="w-20 h-20 rounded-lg overflow-hidden bg-cream flex-shrink-0 relative">
+<img alt="HDPE Pellets Image" class="w-full h-full object-cover" data-alt="A close-up studio shot of translucent white high-density polyethylene (HDPE) plastic pellets scattered cleanly on a bright white surface. The lighting is crisp and even, highlighting the uniform shape of the industrial raw material. The mood is clinical, professional, and modern, suitable for a B2B petrochemical product listing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlp6zdhEyCEMbYfz4YFUUrKN1ADwePkSIQpsctsswhF6r3e9Gn4tUHiO6YgUeiUudLUpBUX9BsqL82GhEi79CmK8M-Z4F8wX4BaKhF8CD5WB61IbPed7aPXXER1DDwNh5bimIqgAOXntX-Ptz256cisuMfAAXfEbKkxDTdQR2oEX544-f_Bp-cnSfYgMDAGpvnsk5JXJEbeyaForsbLnYj1Pj1EjI-TnJOa6pkiQlYG_x5vFoIYxIs83IklUw0qh2DXTN4CsDTev8"/>
+</div>
+<div class="flex flex-col justify-between flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-label-bold text-label-bold text-primary">HDPE Pellets (Injection)</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SABIC Grade | Industrial</span>
+</div>
+<button class="text-on-surface-variant hover:text-danger transition-colors opacity-0 group-hover:opacity-100 focus:opacity-100">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex items-center justify-between mt-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Qty (MT):</span>
+<div class="flex items-center border border-outline-variant rounded-lg overflow-hidden bg-white">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<input class="w-16 h-8 text-center border-x border-outline-variant/30 font-body-sm text-body-sm text-primary focus:outline-none appearance-none bg-transparent" min="50" type="number" value="200"/>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Add More Products CTA -->
+<div class="p-4 border-t border-outline-variant/30 bg-surface-bright flex justify-center">
+<a class="font-label-bold text-label-bold text-primary flex items-center gap-1 hover:text-secondary-container transition-colors group" href="#">
+<span class="material-symbols-outlined text-[18px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                            Continue Browsing Catalog
+                        </a>
+</div>
+</div>
+<!-- Trust Badges (Mini) -->
+<div class="flex items-center justify-center gap-6 px-4 py-2 opacity-70">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Secure RFQ</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">support_agent</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">24/7 B2B Support</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-on-tertiary-fixed border-t border-outline/20 w-full py-section-padding-desktop px-gutter flex flex-col md:flex-row justify-between max-w-container-max mx-auto mt-auto">
+<div class="flex flex-col gap-4 max-w-sm mb-8 md:mb-0">
+<span class="font-headline-lg text-headline-lg font-bold text-on-primary dark:text-gold-light">Areej Al Alam</span>
+<p class="font-body-sm text-body-sm text-on-primary-container dark:text-on-tertiary-container">
+                © 2024 Areej Al Alam. All Rights Reserved. Riyadh, Saudi Arabia.
+            </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-4">
+<a class="text-on-primary-container dark:text-on-tertiary-container hover:text-on-primary hover:underline transition-all font-body-sm text-body-sm" href="#">Saudi Arabia Office</a>
+<a class="text-on-primary-container dark:text-on-tertiary-container hover:text-on-primary hover:underline transition-all font-body-sm text-body-sm" href="#">Egypt Branch</a>
+<a class="text-on-primary-container dark:text-on-tertiary-container hover:text-on-primary hover:underline transition-all font-body-sm text-body-sm" href="#">Malaysia Logistics</a>
+<a class="text-on-primary-container dark:text-on-tertiary-container hover:text-on-primary hover:underline transition-all font-body-sm text-body-sm" href="#">Catalog PDF</a>
+<a class="text-on-primary-container dark:text-on-tertiary-container hover:text-on-primary hover:underline transition-all font-body-sm text-body-sm" href="#">Terms of Trade</a>
+<a class="text-on-primary-container dark:text-on-tertiary-container hover:text-on-primary hover:underline transition-all font-body-sm text-body-sm" href="#">Privacy Policy</a>
+</div>
+</footer>
+</body></html>
