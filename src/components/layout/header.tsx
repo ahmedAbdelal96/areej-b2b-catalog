@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { useLanguage } from "@/contexts/language-context"
+import { useQuoteBasket } from "@/contexts/quote-basket-context"
 import { LanguageSwitcher } from "@/components/shared/language-switcher"
 import { navigation } from "@/data/navigation"
 import { Menu, ShoppingBasket } from "lucide-react"
@@ -10,6 +11,7 @@ import { MobileNav } from "./mobile-nav"
 
 export function Header() {
   const { language } = useLanguage()
+  const { itemCount } = useQuoteBasket()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const navItems = language === "en" ? navigation.en : navigation.ar
 
@@ -48,16 +50,20 @@ export function Header() {
               <LanguageSwitcher />
 
               {/* Quote Basket */}
-              <button
+              <Link
+                href="/request-quote"
                 className="relative flex items-center gap-2 rounded-full bg-[#F8F4EC] px-4 py-2 text-sm font-medium text-[#0B1F35] transition-colors hover:bg-[#EFE6D8]"
-                aria-label="Quote basket"
               >
                 <ShoppingBasket className="h-4 w-4" />
-                <span className="hidden sm:inline">Quote Basket</span>
-                <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-[#B8893B] text-xs text-white">
-                  0
+                <span className="hidden sm:inline">
+                  {language === "en" ? "Quote Basket" : "سلة الطلب"}
                 </span>
-              </button>
+                {itemCount > 0 && (
+                  <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-[#B8893B] text-xs text-white">
+                    {itemCount}
+                  </span>
+                )}
+              </Link>
 
               {/* Request Quote CTA */}
               <Link

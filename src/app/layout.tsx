@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import { LanguageProvider } from "@/contexts/language-context"
+import { QuoteBasketProvider } from "@/contexts/quote-basket-context"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 
@@ -19,9 +20,11 @@ export default function RootLayout({
     <html lang="en" dir="ltr" suppressHydrationWarning>
       <body className="min-h-screen flex flex-col bg-white text-[#111827] antialiased">
         <LanguageProvider>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
+          <QuoteBasketProvider>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </QuoteBasketProvider>
         </LanguageProvider>
       </body>
     </html>

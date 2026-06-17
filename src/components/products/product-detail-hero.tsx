@@ -1,7 +1,9 @@
 "use client"
 
+import Link from "next/link"
 import { Product } from "@/types/product"
 import { useLanguage } from "@/contexts/language-context"
+import { useQuoteBasket } from "@/contexts/quote-basket-context"
 import { Container } from "@/components/shared/container"
 import { ShoppingBasket } from "lucide-react"
 
@@ -11,6 +13,7 @@ interface ProductDetailHeroProps {
 
 export function ProductDetailHero({ product }: ProductDetailHeroProps) {
   const { language } = useLanguage()
+  const { addItem } = useQuoteBasket()
 
   const getBrandBadgeColor = (brand: string) => {
     switch (brand) {
@@ -112,13 +115,29 @@ export function ProductDetailHero({ product }: ProductDetailHeroProps) {
 
             {/* CTA */}
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <button className="inline-flex items-center justify-center gap-2 rounded-full bg-[#0B1F35] px-8 py-3 font-semibold text-white transition-colors hover:bg-[#102B46]">
+              <button
+                onClick={() =>
+                  addItem({
+                    id: product.id,
+                    slug: product.slug,
+                    name: product.name,
+                    arabicName: product.arabicName,
+                    brand: product.brand,
+                    category: product.category,
+                    moq: product.moq,
+                  })
+                }
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#0B1F35] px-8 py-3 font-semibold text-white transition-colors hover:bg-[#102B46]"
+              >
                 <ShoppingBasket className="h-5 w-5" />
                 {language === "en" ? "Add to Quote" : "أضف إلى الطلب"}
               </button>
-              <button className="inline-flex items-center justify-center gap-2 rounded-full border border-[#E5E7EB] px-8 py-3 font-semibold text-[#0B1F35] transition-colors hover:border-[#B8893B]">
+              <Link
+                href="/request-quote"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-[#E5E7EB] px-8 py-3 font-semibold text-[#0B1F35] transition-colors hover:border-[#B8893B]"
+              >
                 {language === "en" ? "Request Quote" : "اطلب عرض سعر"}
-              </button>
+              </Link>
             </div>
           </div>
         </div>

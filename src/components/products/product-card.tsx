@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { Product } from "@/types/product"
 import { useLanguage } from "@/contexts/language-context"
+import { useQuoteBasket } from "@/contexts/quote-basket-context"
 import { ShoppingBasket, ArrowRight } from "lucide-react"
 
 interface ProductCardProps {
@@ -11,6 +12,7 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   const { language } = useLanguage()
+  const { addItem } = useQuoteBasket()
 
   const getBrandBadgeColor = (brand: string) => {
     switch (brand) {
@@ -103,8 +105,19 @@ export function ProductCard({ product }: ProductCardProps) {
             <ArrowRight className="h-4 w-4" />
           </Link>
           <button
+            onClick={() =>
+              addItem({
+                id: product.id,
+                slug: product.slug,
+                name: product.name,
+                arabicName: product.arabicName,
+                brand: product.brand,
+                category: product.category,
+                moq: product.moq,
+              })
+            }
             className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0B1F35] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#102B46]"
-            aria-label="Add to quote basket"
+            title={language === "en" ? "Add to quote" : "أضف لسلة الطلب"}
           >
             <ShoppingBasket className="h-4 w-4" />
           </button>

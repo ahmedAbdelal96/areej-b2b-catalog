@@ -1,5 +1,6 @@
 "use client"
 
+import { useState, useMemo } from "react"
 import { products } from "@/data/products"
 import { ProductGrid } from "@/components/products/product-grid"
 import { ProductFilters } from "@/components/products/product-filters"
@@ -9,6 +10,14 @@ import { useLanguage } from "@/contexts/language-context"
 
 export default function ProductsPage() {
   const { language } = useLanguage()
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
+
+  const filteredProducts = useMemo(() => {
+    if (!selectedCategory) {
+      return products
+    }
+    return products.filter((p) => p.categorySlug === selectedCategory)
+  }, [selectedCategory])
 
   return (
     <div className="bg-white px-4 py-12">
@@ -22,14 +31,17 @@ export default function ProductsPage() {
           }
         />
 
-        <ProductFilters />
+        <ProductFilters
+          selectedCategory={selectedCategory}
+          onCategoryChange={setSelectedCategory}
+        />
 
         <div className="mb-6 text-sm text-[#6B7280]">
-          {language === "en" ? "Showing" : "عرض"} {products.length}{" "}
+          {language === "en" ? "Showing" : "عرض"} {filteredProducts.length}{" "}
           {language === "en" ? "products" : "منتج"}
         </div>
 
-        <ProductGrid products={products} />
+        <ProductGrid products={filteredProducts} />
       </Container>
     </div>
   )

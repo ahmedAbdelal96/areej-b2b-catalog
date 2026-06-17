@@ -1,21 +1,14 @@
 "use client"
 
 import { useLanguage } from "@/contexts/language-context"
+import { useQuoteBasket } from "@/contexts/quote-basket-context"
 import { useState } from "react"
 import { X, Plus, Minus } from "lucide-react"
 
-interface QuoteItem {
-  id: string
-  name: string
-  arabicName: string
-  moq: string
-  quantity: number
-}
-
 export function QuoteBasket() {
   const { language } = useLanguage()
+  const { items, removeItem, updateQuantity } = useQuoteBasket()
   const [isOpen, setIsOpen] = useState(false)
-  const [items] = useState<QuoteItem[]>([])
 
   const itemCount = items.length
 
@@ -80,7 +73,7 @@ export function QuoteBasket() {
                         <div className="h-12 w-12 rounded-lg bg-[#F8F4EC]" />
                         <div className="flex-1">
                           <p className="font-medium text-[#0B1F35]">
-                            {item.name}
+                            {language === "en" ? item.name : item.arabicName}
                           </p>
                           <p className="text-sm text-[#6B7280]">
                             MOQ: {item.moq}
@@ -88,6 +81,9 @@ export function QuoteBasket() {
                         </div>
                         <div className="flex items-center gap-2">
                           <button
+                            onClick={() =>
+                              updateQuantity(item.id, item.quantity - 1)
+                            }
                             className="p-1 text-[#6B7280] hover:text-[#0B1F35]"
                             aria-label="Decrease quantity"
                           >
@@ -95,12 +91,22 @@ export function QuoteBasket() {
                           </button>
                           <span className="w-8 text-center">{item.quantity}</span>
                           <button
+                            onClick={() =>
+                              updateQuantity(item.id, item.quantity + 1)
+                            }
                             className="p-1 text-[#6B7280] hover:text-[#0B1F35]"
                             aria-label="Increase quantity"
                           >
                             <Plus className="h-4 w-4" />
                           </button>
                         </div>
+                        <button
+                          onClick={() => removeItem(item.id)}
+                          className="p-1 text-[#6B7280] hover:text-[#E21B1B]"
+                          aria-label="Remove item"
+                        >
+                          <X className="h-4 w-4" />
+                        </button>
                       </li>
                     ))}
                   </ul>
